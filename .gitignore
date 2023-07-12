@@ -23,10 +23,3 @@
 # WSL files
 *.Identifier
 *.uuid
-
-# KiCad files
-*bak
-*backup*
-*cache
-*cache.lib
-*#auto_save*
