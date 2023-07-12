@@ -1,4 +1,5 @@
-FROM osrf/ros:noetic-desktop-full
+ARG ROS_DISTRO=${ROS_DISTRO}
+FROM osrf/ros:${ROS_DISTRO}-desktop-full
 
 SHELL ["/bin/bash", "-c"]
 
@@ -9,7 +10,7 @@ ENV QT_X11_NO_MITSHM=1
 RUN apt-get update && \
     apt-get install python3-catkin-tools -y
 
-RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 
 # Install pip tools 
 RUN apt-get install -y python3-pip
@@ -18,7 +19,7 @@ RUN apt-get install -y python3-pip
 RUN pip3 install pigpio
 
 # Install ros control dependencies for simulation
-RUN apt-get install -y ros-noetic-ros-control ros-noetic-ros-controllers
+RUN apt-get install -y ros-${ROS_DISTRO}-ros-control ros-${ROS_DISTRO}-ros-controllers
 
 WORKDIR /root/catkin_ws/
 
