@@ -14,9 +14,13 @@ Find and replace the following text with the name of the project:
 
 <img src="https://user-images.githubusercontent.com/30636259/235979806-03ed419c-5748-45eb-b5bb-1ab401ddd267.png" alt="Logo" width="120"/>
 
+
+
 <!-- omit in toc -->
 # PAI's project
 Code and documentation for a UGV that can work and be teleoperated in a cultivate.
+## Demo 
+https://github.com/cychitivav/pai/assets/25491198/52f5e7e0-7c6e-4bfb-a89a-b5a545ff863a
 
 [**Explore the docs »**](https://cychitivav.github.io/pai)
 
